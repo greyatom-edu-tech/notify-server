@@ -22,7 +22,7 @@
     <script src="http://code.jquery.com/jquery-1.11.1.js"></script>
     <script>
       var room = "user_id";
-      var socket = io.connect('http://localhost:3000', {reconnect: true});
+      var socket = io.connect('http://35.154.96.42:9000', {reconnect: true});
 
       socket.on('connect', function() {
          // Connected, let's sign-up for to receive messages for this room
