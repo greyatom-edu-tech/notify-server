@@ -31,7 +31,7 @@
       });
 
       $('form').submit(function(){
-        socket.emit('message', '{"room":"'+room+'","title":"Lesson name","message":"'+$('#m').val()+'"}');
+        socket.emit('message', '{"room":"'+room+'","type":"notify_ide","title":"Lesson name","message":"'+$('#m').val()+'"}');
         $('#m').val('');
         return false;
       });
